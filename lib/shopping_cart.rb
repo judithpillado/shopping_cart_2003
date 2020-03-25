@@ -15,4 +15,8 @@ class ShoppingCart
   def add_product(product)
     @products << product
   end
+
+  def total_number_of_products
+    group_by
+  end
 end
