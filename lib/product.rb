@@ -4,11 +4,11 @@ class Product
   def initialize(category, name_parameter, unit_price, quantity)
     @category = category
     @name = name_parameter
-    @unit_price = 3.70
+    @unit_price = unit_price
     @quantity = quantity
   end
 
   def total_price
-    @unit_price * @quantity
+    @unit_price * (@quantity.to_f)
   end
 end
