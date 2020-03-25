@@ -11,4 +11,13 @@ class Product
   def total_price
     @unit_price * (@quantity.to_f)
   end
+
+  def is_hoarded?
+    if product.hoard
+      true
+    else
+      false
+    end
+  end
+
 end
